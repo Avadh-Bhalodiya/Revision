@@ -1,0 +1,23 @@
+def test(num):
+  def inner():
+    a = num()
+    multi = a*5
+    return multi
+  return inner
+
+def test1(num):
+  def inner():
+    a = num()
+    add = a+5
+    return add
+  return inner
+
+def num():
+  return 20
+
+num = test1(test(num))
+print(num())
+
+->  changing in functions without extra body add in normal function.
+->  normal func ne change kriya vagar ema sudhara vadhara karvama aave ena mate decorator
+    func. use thai.

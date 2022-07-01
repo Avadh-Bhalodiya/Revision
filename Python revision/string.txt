@@ -1,0 +1,46 @@
+->  print("Hello")
+    print('Hello')
+
+->  s1 = """aadslfk fadsljh asfldhl afdslk,
+    afjh  hafkhjd afhhkj hfh khfa f  jsfd,
+    kdfjhshaouhfejfj fashj uefah fhajk
+    kajh fkjhiufh sskajhf sdhsfjud."""
+          OR 
+    '''aadslfk fadsljh asfldhl afdslk,
+    afjh  hafkhjd afhhkj hfh khfa f  jsfd,
+    kdfjhshaouhfejfj fashj uefah fhajk
+    kajh fkjhiufh sskajhf sdhsfjud.'''
+
+->  Check if "free" is present in the following text
+    - print("free" in s1)
+    - if "free" in s1:
+
+    - print("free" not in s1)
+    - if "free" not in s1:
+
+->  a = "Hello, World!"
+    print(a[1])   //  output:-  e
+
+->  len(s1) - string len check
+
+->  s1[4:9]
+->  s1[4:]
+->  s1[:9]
+->  s1[-4:-1]
+
+->  s1.upper()
+->  s1.lower()
+
+->  s1.strip()
+    - The strip() method removes any whitespace from the beginning or the end.
+
+->  s1.replace()
+
+->  a = "Hello, World!"
+    print(a.split(","))
+    - The split() method splits the string into substrings if it finds instances of the separator.
+
+->  s = s1+s2   //    String Concatenation
+
+->  myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+    print(myorder.format(quantity, itemno, price))

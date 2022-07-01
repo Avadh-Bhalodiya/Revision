@@ -1,0 +1,132 @@
+** -  List is a collection which is ordered and changeable. Allows duplicate members.
+- Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+- Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+- Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+
+->  def any_func_name(normal_arg, *args, **kwargs)
+  - sequence matter 
+->  *args:- 
+  - single arguments pass in *args like only single value(str, int, float, list,
+    tuple, set etc...)  pass in args.
+->  **kwargs:-
+  - multiple arguments pass in **kwargs, like key,value in dict both pass in
+    **kwargs.
+
+->  As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier,
+    dictionaries are unordered.
+
+->  iterate over dictionary items using for loop.
+  
+  - for k,v in dict.items():
+      print(f"{k} {v}")   # not work on below python version 3.6
+
+->  2 lists convert into a dictionary
+  - x = dict(zip(key_listname,value_listname))
+
+->  remove a set of keys in dict
+  - d = {k:a[k] for k in a.keys()-key_r}
+  - Why use curly braces?
+
+->  sort dictionary by values
+- what is itemgetter?
+  - sort_a = sorted(a.items(), key=operator.itemgetter(1))
+  - sort_a = sorted(a.items(), key=operator.itemgetter(1),reverse=True)
+  - This itemgetter 
+
+->  check if a dictionary is empty or not ?
+ - 
+
+->  get(key,def_val)     //  def_val = default value
+
+->  print(dict)
+
+->  print(dict['key_name'])    // print value of key
+
+->  duplicates not allow in dict type force fully duplicate then overwrite value
+  - dict = {"year": 1964,"year": 2020}    //  ans:- print(dict) - {'year':2020}
+
+->  len(dict)   // length of dict
+
+->  The values in dictionary items can be of any data type  //  int, str, list,
+    flote etc ...
+
+->  type(dict)   //   type is check for datatype of any term
+
+->  dict["key_name"]  // access key for value's output
+
+->  dict.get("key_name")  //  access key for value's output
+
+->  dict.keys()
+  - get keys in dict
+  - The keys() method will "return a list" of all the keys in the dictionary.
+  - keys() method in Python Dictionary, returns a view object that displays a list
+      of all the keys in the dictionary [in order of insertion.]
+
+->  dict.values()
+  - get values in dict
+  - The values() method will "return a list" of all the values in the dictionary.
+
+->  dict.items()
+  - The items() method will return each item in a dictionary, as tuples in a list.
+    - ex. dict([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1964)])
+  - The returned list is a view of the items of the dictionary, meaning that any    
+    changes done to the dictionary will be reflected in the items list.
+
+->  if "model" in dict:   //  model key exists or not ? check
+
+->  dict["year"] = 2018
+
+->  dict["key_name"]="value"  //  add value,key in existing dict
+    - item change or add both perform
+
+->  dict.update({key_name:value})   //   add value,key in existing dict
+    - dict1.update(dict2)
+    - item change or add both perform
+
+->  dict.pop("key_name")
+
+->  dict.popitem()
+    - The popitem() method removes the last inserted item (in versions before 3.7, a
+      random item is removed instead).
+
+->  del dict("key_name")  //  The del keyword removes the item with the specified
+    key name.
+
+->  del dict    //  The del keyword can also delete the dictionary completely.
+
+->  dict.clear()    //  The clear() method empties the dictionary not a delete.
+
+->  for x in dict:  //  Print all key names in the dictionary, one by one
+      print(x)
+
+->  for x in dict:  //  Print all values in the dictionary, one by one
+      print(dict[x])
+
+->  for x in dict.keys():  //  Print all key names in the dictionary, one by one
+      print(x)
+
+->  for x in dict.values():  //  Print all values in the dictionary, one by one
+      print(dict[x])
+
+->  for x, y in thisdict.items(): //  Loop through both keys and values, by using 
+      print(x, y)                     the items() method
+
+->  t = dict.copy()   //  Make a copy of a dictionary with the copy() method
+
+->  d2 = dict(d1)   //  Make a copy of a dictionary with the dict() function
+
+->  dict.fromkeys(a,b)  //  Create a dictionary with 3 keys, all with the value (0,1)
+    - The fromkeys() method returns a dictionary with the specified keys and the
+      specified value.
+    - Input:-
+        x = ('key1', 'key2', 'key3')
+        y = [0,1]
+        d1 = dict.fromkeys(x, y)
+        print(d1)
+    - output:-
+        {'key1': [0, 1], 'key2': [0, 1], 'key3': [0, 1]}
+
+->  dict.setdefault("key_name","value")
+    - The setdefault() method returns the value of the item with the specified key.
+    - If the key does not exist, insert the key, with the specified value.

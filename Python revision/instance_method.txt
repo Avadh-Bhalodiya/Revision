@@ -1,0 +1,18 @@
+- Instance method
+  def __init__(self):
+        self.variable_name = value      //    this is a instance variable
+
+  def method_name(self, args1, args2, .....):
+        func body
+
+  object_name.method_name(args1, args2, ....)
+
+- Accessor method
+  - getter method
+  - get_value(self):    //  get_name(self):
+  - get the variable value
+
+- Mutator method
+  - setter method
+  - set_value(self):    //  set_name(self):
+  - set the variable value

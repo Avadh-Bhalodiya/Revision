@@ -1,0 +1,38 @@
+->  t1 = ("apple",)   //  single item tuple
+
+->  t1 = tuple(("horse","lion"))
+
+->  t1[3]   //  Print the forth item in the tuple
+->  t1[-4]
+->  t1[3:7]
+->  t1[3:]
+->  t1[:7]
+->  t1[-6:-1]
+
+->  if "value" in t1:   //  Check if Item Exists
+
+->  You can convert the tuple into a list, change the list, and convert the list back into a tuple.
+
+->  You are allowed to add tuples to tuples, so if you want to add one item, (or many), create a new tuple with the item(s), and add it to the existing tuple
+    - t1 = t1 + t2
+
+->  fruits = ("apple", "banana", "cherry")
+    (green, yellow, red) = fruits
+    print(green)                    OP:-  apple
+    print(yellow)                         banana
+    print(red)                            cherry
+
+->  fruits = ("apple", "banana", "cherry", "watermelaon", "pineapple")
+    (green, yellow, *red) = fruits
+    print(green)                    OP:-  apple
+    print(yellow)                         banana
+    print(*red)                           ['cherry', 'watermelaon', 'pineapple']
+
+->  for x in t1:
+    - You can loop through the tuple items by using a for loop.
+
+->  t = t1+t2   //    To join two or more tuples you can use the + operator
+
+->  t1 = ("apple", "banana", "cherry")
+    t2 = t1 * 2
+    Output:-  ('apple', 'banana', 'cherry', 'apple', 'banana', 'cherry')

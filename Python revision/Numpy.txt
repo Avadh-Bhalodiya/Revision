@@ -1,0 +1,133 @@
+- Numpy = Numerical Python
+- NumPy is used for working with arrays.
+
+- arr1 = np.array([1, 2, 3, 4, 5, 6])
+    - we can pass a list, tuple or any array-like object into the array() method, it will be converted into an ndarray.
+
+- arr3.ndim
+    - ndim check to Dimension
+
+-- Index
+
+- arr[0, 1, 4]
+    - 3D array index
+
+- arr[1, -1]
+    - negative index
+
+- arr8[2:7]
+    - slicing array
+
+- arr9[0:2, 3]
+    - both row's (0 & 1) 4th elment show
+
+- arr9[0:2, 2:8]
+    - both row's (0 & 1) 2nd to 7th elment show
+
+-- Numpy Datatype
+    i - integer (include negative number)
+    b - boolean
+    u - unsigned integer    (only positive number)
+    f - float
+    c - complex float   (ex = 2.5 + 3.8j)
+    m - timedelta   (timedelta(days = 365, hours = 9, minutes = 15))
+    M - datetime    (1999-05-27 07:35:05.523000)
+                    (yyyy-mm-dd hours:minutes:seconds.micro-seconds)
+
+    O - object      (An object is simply a collection of data (variables) and methods (functions) that act on those data.)
+
+    S - string
+
+- astype() function creates a copy of the array, and allows you to specify the data type as a parameter.
+
+- Copy
+    - The copy owns the data and any changes made to the copy will not affect original array, and any changes made to the original array will not affect the copy.
+
+    - arr.copy()
+
+- View
+    - The view does not own the data and any changes made to the view will affect the original array, and any changes made to the original array will affect the view.
+
+    - - arr.view()
+
+- Shape of Array
+    - arr16.shape
+    - arr18.reshape(4,3)    // 1D to 2D
+    - arr18.reshape(2,3,2)  // 1D to 3D
+    - arr18.reshape(3,2,-1) // only in one arg. take -1
+                               automatic set value
+
+- Flattening Array
+    - Flattening array means converting a multidimensional array into a 1D array.
+    - reshape(-1)
+
+- Iterating
+    - Iterating means going through elements one by one.
+    - using simple for loop
+    - mainly use nditer() this func.
+
+- Iterating Array With Different Data Types
+    - np.nditer(arr, flags=['buffered'], op_dtypes=['S'])
+
+- Iterating With Different Step Size (Slicing like)
+    - np.nditer(arr[:, ::2])
+
+- Enumerated Iteration
+    - Using ndenumerate()
+
+- Joining Array
+    - concatenate()
+    -** Joining means putting contents of *two or more arrays in a *single array.
+    - np.concatenate((a3, a4, a5), axis=1)  // with axis number by defualt axis = 0
+    - axis have only 2 value 0(for Column) & 1(for Row)
+    - ex. [101 102 103   1   2   3]
+
+    - stack()
+    - Stacking is same as concatenation, the only difference is that stacking is done along a new axis.
+    - it means not with single array that is create 2D array 
+    - ex. [[101 102 103]
+           [  1   2   3]]
+
+    - hstack()
+    - hstack() to stack along rows.
+
+    - vstack()
+    - vstack()  to stack along columns.
+
+    - dstack()
+    - dstack() to stack along height, which is the same as depth.
+
+- Splitting
+    - Splitting is reverse operation of Joining.
+    - array_split()
+    - split() is not automatic adjustable thats why we are not use.
+    - opposites
+        - hsplit()      hstack()
+        - vsplit()      vstack()
+        - dsplit()      dstack()
+
+- Search 
+    - where()   //  find value position number
+    - searchsorted()    //  1st sort array then find position of value
+        - side = right index start with 1 but count left to right
+        - side = left  index start with 0 but count left to right
+        - choose any side but count start always with left side
+
+- Sort 
+    - Sorting means putting elements in an ordered sequence.
+    - np.sort(arr)  //  A-Z a-z /  False, True / 0-9
+
+
+##  Numpy random
+
+- Random Number
+    - random.randint(100)   // 0 to 100 any random number pick up
+    - random.rand()         // random float number between 0 to 1
+    - random.choice([102,4,57,68])  // random choice in this array
+
+- Data distribution
+    - random.choice([3, 5, 7, 9], p=[0.1, 0.3, 0.6, 0.0], size=(100))
+    - The probability is set by a number between 0 and 1, where 0 means that the value will never occur and 1 means that the value will always occur.
+    - We can generate random numbers based on defined probabilities using the choice() method of the random module.
+    **- The sum of all probability numbers should be 1.
+    - You can return arrays of any shape and size by specifying the shape in the size parameter.

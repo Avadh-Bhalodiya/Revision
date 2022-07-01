@@ -1,0 +1,77 @@
+1st Session:-
+-----------------------
+Management :-
+----------------
+follow proper hirerchy
+respect client and employee
+organization oriented
+improve communication
+
+Managerial:-
+-------------
+
+Project flow:-
+	- Product base
+	- Web base
+	
+	
+Client type:-
+	-Domestic (across india)
+	PAN - pacific Asia Nations	(india, china etc...)
+	
+Digiqt 	EDL - edelwise general ins	(Product base Company) 		- Switch Project
+company	HDFCLife99
+client	AOG - US
+on	Graphite
+going
+project	
+
+New HR Manager:- 
+
+Reporting Sort method
+
+Project Onboard:-
+	Client all review everything
+	Client attraction always BDE - shubham, nisarg
+	our company good review
+	demo time - BDE & CEO
+	
+	Deal - finacialy, Project, Resource
+	client a - b ceo 
+	PM 1st call with client:-
+		- Figma		(what is figma? myque.)	(ans - all design about project)
+		- BRD (Bussiness Requirment Document) clinet no idea, flow	ex. login
+		- BRS (Bussiness Requirment Specification)	ex. login ma su su add karvu ne kem e kese client
+		- SRS (System Requirment Spec)
+		
+		- client side server
+			- UAT
+			- Devops
+			- prod
+	- 3 days thai jai aa badhu bhegu karvama
+	- PM :	UI - 1
+		UX - 2 + 1(senior)
+		BE - 1
+		TL - 1(compulsary)
+	- 4th day BRD - review
+	- 1 doc send client
+	- 3 day lye client
+	- SPOC (Point of contact)	(Point of Contact Person)
+	- always use datewise save file
+	
+	- NDA :- Non Discloser Agreement
+	- amuk client (personally NDA mage)
+	- User - manual:- Guide for a client
+	
+Mail:-
+	conversation - Written, Verbal always request.
+	
+	Sub:- Proper clear
+	- mail ma j kam nu hoi ene bold kri devanu
+	- koi rai gyu hoi to looping name or looping name++
+	- Client jode MOM karvanu j
+		- 1:1 connection nai karvanu
+		- Team Lead(TL ne loop ma rakhvana) offie time ma j karvanu
+2nd Session:-
+-----------------------		
+

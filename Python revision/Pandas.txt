@@ -1,0 +1,96 @@
+Pandas :-
+- Pandas is a Python library.
+- Pandas is used to analyzing, cleaning, exploring, and manipulating data.
+- Series only 1D data.
+- DataFrame 2D data set.(Create Proper Table)
+
+    - loc[2]  (refer row index in table)
+
+- Read CSV
+
+    - If your data sets are stored in a file, Pandas can load them into a DataFrame.
+        - read_csv()    // csv = comma-separated values
+
+    - return the entire DataFrame.
+    - whole data represent to this command
+        - to_string()
+    
+    - direct print variable without use to_string only 1st & last 5 line show in your big database.
+    print(f1)
+
+    - print(pd.options.display.max_rows)
+    - this command ans 60 means above 60 row data show a only 1st & last 5 line show in your big database. use print(f1) this direct object
+
+    - change fix row value remove 60 and set 200 rows data show
+    - print(pd.options.display.max_rows)
+
+- Read JSON
+
+    - read_json('data.json')
+        - that command is read a json file
+
+- head()
+    - this method quick review with some data column show
+    - by defualt set value in head in 5. (5 row show not define row at that time.)
+
+- tail()
+    - this method show last rows of database.
+    - by defualt set value in tail is 5.
+
+- info()
+    - that means information of our database.
+    - <class 'pandas.core.frame.DataFrame'>
+        RangeIndex: 169 entries, 0 to 168
+        Data columns (total 4 columns):
+        #   Column    Non-Null Count  Dtype  
+        ---  ------    --------------  -----  
+        0   Duration  169 non-null    int64  
+        1   Pulse     169 non-null    int64  
+        2   Maxpulse  169 non-null    int64  
+        3   Calories  164 non-null    float64
+        dtypes: float64(1), int64(3)
+        memory usage: 5.4 KB
+        None
+
+- Cleaning Data
+
+- what is bad data?
+    - Empty cells
+    - Data in wrong format
+    - Wrong data
+    - Duplicates
+
+- dropna()
+    - By default, the dropna() method returns a new DataFrame, and will not change the original.
+    - remove empty cell and Create copy same database and stored.
+    - dropna(inplace = True) change in original database
+
+- fillna()
+    - Replace Empty cell value
+    - Change specified column in value set
+
+        df["Calories"].fillna(130, inplace = True)
+            Column Name
+    
+- Replace value with MEAN
+    - MEAN - Average
+
+- Replace value with MEDIAN
+    - MEDAIN
+        - (1) arrange number in accending order
+        - (2) 2,3,4,16,28 they are 5 number so 5/2 = 2.5 so round up 2.5 means 3rd position = 4 is a median.
+
+- Replace value with MODE
+    - MODE
+        - (1) 2, 3, 6, 3, 7, 5, 1, 2, 3, 9      //  3 is a mode of this que.
+        - (2) most frequent number that number is a mode.
+        - (3) 13, 17, 20, 20, 21, 23, 23, 26, 29, 30    //  there is no mode in this que.
+            - because 20 & 23 both are asme frequent.
+
+- Change Format 
+    - to_datetime(w1['Date'])       //  date column cahnge in date format
+    - w1.loc[7,'Duration']=45       //  replace wrong data
+    - if w1.loc[i, 'Duration'] > 120:
+        w1.drop(i, inplace=True)        //  remove wrong data
+
+- Find & Remove Duplicate

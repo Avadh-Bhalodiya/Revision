@@ -1,0 +1,45 @@
+->  s1 = set(("apple", "banana", "cherry"))
+    - It is also possible to use the set() constructor to make a set.
+
+->  for x in thisset:   //  access set item
+
+->  print("value" in s1)
+
+->  s1.add("value")
+    - Add an item to a set, using the add() method
+
+->  s1.update(s2)   /   s1.update(l1)  -   s1 = tuple, l1 = list
+    - To add items from another set into the current set, use the update() method.
+    - The object in the update() method does not have to be a set, it can be any iterable object (tuples, lists, dictionaries etc.)
+
+->  s1.remove("value")
+    - To remove an item in a set, use the remove()
+    - If the item to remove does not exist, remove() will raise an error.
+
+->  s1.discard("value")
+    - To remove an item in a set, use the discard()
+
+->  s1.pop()
+    - You can also use the pop() method to remove an item, but this method will remove the last item. Remember that sets are unordered, so you will not know what item that gets removed.
+
+->  s1.clear()
+    - The clear() method empties the set.
+
+->  del s1
+    - The del keyword will delete the set completely.
+
+->  for x in s1:
+    - You can loop through the set items by using a for loop.
+
+->  s3 = s1.union(s2)
+    - The union() method returns a new set with all items from both sets.
+
+->  s1.update(s2)
+    - The update() method inserts the items in set2 into set1.
+
+->  s1.intersection_update(s2)
+    - The intersection_update() method will keep only the items that are present in both sets.
+
+->  s1.symmetric_difference_update(s2)
+    - The symmetric_difference_update() method will keep only the elements that are NOT present in both sets.
+

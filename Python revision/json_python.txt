@@ -1,0 +1,36 @@
+->  JSON is a syntax for storing and exchanging data.
+->  JSON is text, written with JavaScript object notation.
+
+->  Python has a built-in package called json
+    - import json
+
+->  Parse JSON - Convert from JSON to Python
+    - using the json.loads()
+    - b = json.load(a)          //    print b type is dict class.
+    - The result will be a Python dictionary.
+
+->  Convert from Python to JSON
+    - using the json.dumps()
+    - b = json.dumps(a)       //    print b type is str class.
+
+->  convert from Python to JSON
+    -Table
+          dict	  Object
+          list	  Array
+          tuple	  Array
+          str	    String
+          int	    Number
+          float	  Number
+          True	  true
+          False	  false
+          None	  null
+
+->  print(json.dumps(x, indent=4))      //  indent means code proper arrange with spaces
+
+->  json.dumps(x, indent=4, separators=(". ", " = "))
+    - Use the separators parameter to change the default separator:
+    - 1st is end point separate objects and last is separate keys from their values
+    - like this , "divorced" = false.
+
+->  json.dumps(x, indent=4, sort_keys=True)
+    - Use the sort_keys parameter to specify if the result should be sorted or not

@@ -1,0 +1,13 @@
+class C(object):
+    @staticmethod
+    def fun(arg1, arg2, ...):
+        method body 
+returns: // a static method for function fun.
+
+- nothing any default parameter like classmethod - cls and __init__ - self.
+- original use of static method is with parameters
+- access this method
+  - classname.staticmethod_name(parameters)
+
+- 1.It eliminates the use of self argument.
+  2.It improves code readability

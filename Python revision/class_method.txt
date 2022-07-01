@@ -1,0 +1,9 @@
+class C(object):
+    @classmethod
+    def fun(cls, arg1, arg2, ...):
+      method body
+
+- cls default argument pass in classmethod just like self in __init__.
+- access this method
+  - classname.classmethod_name(parameters)
+- any object define in class modifide, update, change etc perform in classmethod, access any class object in classmethod.

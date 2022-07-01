@@ -1,0 +1,10 @@
+git clone	<USER_URL_HTTPS>
+
+git add .			( . - means add all file OR	particular file name )
+
+git commit -m	"USER_COMMENT"
+
+git push origin <BRANCH_NAME>
+
+
+--- https://dzone.com/articles/top-20-git-commands-with-examples
